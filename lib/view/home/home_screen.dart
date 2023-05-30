@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:rent_app/config/app_theme/app_color.dart';
 import 'package:rent_app/view/home/app_bar_widget.dart';
 import 'package:rent_app/view/home/building_typies_widget.dart';
-import 'package:rent_app/view/home/near_from_you_widget.dart';
+import 'package:rent_app/view/home/best_from_you_widget.dart';
 import 'package:rent_app/view/home/search_widget.dart';
 
 class HomeScreen extends StatelessWidget {
