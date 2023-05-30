@@ -3,6 +3,7 @@ import 'package:rent_app/config/app_theme/app_color.dart';
 import 'package:rent_app/view/home/app_bar_widget.dart';
 import 'package:rent_app/view/home/building_typies_widget.dart';
 import 'package:rent_app/view/home/best_from_you_widget.dart';
+import 'package:rent_app/view/home/near_for_you_widget.dart';
 import 'package:rent_app/view/home/search_widget.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -30,10 +31,9 @@ class HomeScreen extends StatelessWidget {
       duration: duration,
       child: Material(
         animationDuration: duration,
-        borderRadius:  BorderRadius.only(
-          topLeft: Radius.circular(!isCollapsed? 50 : 0),
-          bottomLeft:Radius.circular(!isCollapsed? 50 : 0)
-        ),
+        borderRadius: BorderRadius.only(
+            topLeft: Radius.circular(!isCollapsed ? 50 : 0),
+            bottomLeft: Radius.circular(!isCollapsed ? 50 : 0)),
         elevation: 10,
         color: AppColor.white,
         child: SafeArea(
@@ -45,15 +45,17 @@ class HomeScreen extends StatelessWidget {
                 AppBarWidget(
                   onCollpase: onCollpase,
                 ),
-          
+
                 //* search
                 const SearchWidget(),
-          
+
                 //* buildings types
                 const BuildingTypiesWidget(),
-          
+
                 //* near from you
                 const NearFromYouWidget(),
+                //* near for you
+                const NearForYouWidget()
               ],
             ),
           ),
